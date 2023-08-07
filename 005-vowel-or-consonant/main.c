@@ -1,5 +1,5 @@
 /**
- * Problem: Take a character and determine wether it is a vower or consonant
+ * Problem: Take a character and determine wether it is a vowel or consonant
  * neutral
  * ----------------------------------------------
  * Input:
