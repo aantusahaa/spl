@@ -1,6 +1,7 @@
 /**
  * Problem: Write a function to check if a string is a palindrome or not.
  */
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -9,7 +10,10 @@ void isPalindrome(char *str) {
   int isPalindrome = 1;
 
   for (int i = 0; i < length / 2; i++) {
-    if (str[i] != str[length - i - 2]) {
+    char left = tolower(str[i]);
+    char right = tolower(str[length - i - 2]);
+
+    if (left != right) {
       isPalindrome = 0;
       break;
     }
