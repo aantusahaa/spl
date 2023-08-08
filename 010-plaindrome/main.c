@@ -6,12 +6,12 @@
 #include <string.h>
 
 void isPalindrome(char *str) {
-  int length = strlen(str);
+  int length = strlen(str) - 1;
   int isPalindrome = 1;
 
   for (int i = 0; i < length / 2; i++) {
     char left = tolower(str[i]);
-    char right = tolower(str[length - i - 2]);
+    char right = tolower(str[length - i - 1]);
 
     if (left != right) {
       isPalindrome = 0;
