@@ -14,14 +14,14 @@
 #include <string.h>
 
 void getStringCharacteristics(char *str) {
-  int length = strlen(str);
+  int length = strlen(str) - 1;
   int upperCount = 0;
   int lowerCount = 0;
   int digitCount = 0;
   int spaceCount = 0;
   int nonAlphaNumCount = 0;
 
-  for (int i = 0; str[i] != '\0'; i++) {
+  for (int i = 0; i < length; i++) {
     if (isupper(str[i])) {
       upperCount++;
     } else if (islower(str[i])) {

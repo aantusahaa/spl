@@ -18,7 +18,7 @@ void getStringCharacteristics(char *str) {
   int spaceCount = 0;
   int nonAlphaNumCount = 0;
 
-  for (int i = 0; str[i] != '\0'; i++) {
+  for (int i = 0; str[i] != '\n'; i++) {
     length++;
 
     char ch = str[i];
