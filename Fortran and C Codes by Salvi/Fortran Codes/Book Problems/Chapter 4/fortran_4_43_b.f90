@@ -1,0 +1,14 @@
+PROGRAM SINGLE_ROW
+INTEGER COUNT
+COUNT=0
+DO I=1,99,2
+    IF(MOD(I,7).NE.0)THEN
+        WRITE(*,'(I4,1X)',ADVANCE='NO')I
+        COUNT=COUNT+1
+        IF(MOD(COUNT,4).EQ.0)THEN
+            WRITE(*,*)
+        END IF
+    END IF
+END DO
+STOP
+END

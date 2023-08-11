@@ -1,0 +1,6 @@
+PROGRAM IN_A_LINE
+    DO 10 I=1,298
+        PRINT*,I,I+1,I+2
+        10 CONTINUE
+    STOP
+    END PROGRAM

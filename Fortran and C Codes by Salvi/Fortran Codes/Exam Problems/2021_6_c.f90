@@ -1,0 +1,7 @@
+PROGRAM DIVISIBLE_BY_5
+
+    DO 100  I=1,99,2
+            IF(MOD(I,5).EQ.0)PRINT*,I
+        100 CONTINUE
+        STOP
+END PROGRAM

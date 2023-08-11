@@ -1,0 +1,10 @@
+PROGRAM ODD_SQUARES_CUBES
+I=11
+PRINT*,"       NUMBER   ","   SQUARE   ","   CUBE"
+10  J=I**2
+    K=I**3
+    PRINT*,I,J,K
+    I=I+2
+    IF(I.LT.100)GOTO 10
+    STOP
+END PROGRAM

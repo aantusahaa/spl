@@ -1,0 +1,12 @@
+SUM=0.0
+READ*,N
+
+DO 100  I=1,N
+        SUM=SUM+(1.0/I**2)
+    100 CONTINUE
+
+    PI=SQRT(SUM*6.0)
+    PRINT*,"VALUE OF PI:",PI
+    STOP
+
+END PROGRAM

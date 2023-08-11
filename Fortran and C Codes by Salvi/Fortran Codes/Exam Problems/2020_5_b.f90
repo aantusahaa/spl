@@ -1,0 +1,13 @@
+PROGRAM FRACTION_2020_5_b
+    
+    REAL MULT,I
+    MULT=1.0
+    I=1.0
+
+10  MULT=MULT*((2.0*I+2.0)/(2.0*I+1.0))
+    I=I+1.0
+    IF(I.LE.11.0) GOTO 10
+    WRITE(*,20)MULT
+    20  FORMAT(F10.5)
+
+END PROGRAM

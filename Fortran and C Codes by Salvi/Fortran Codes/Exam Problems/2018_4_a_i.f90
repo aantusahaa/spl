@@ -1,0 +1,8 @@
+J=5
+K=10
+IF(J.GE.K-5)GOTO 10
+J=J+2
+10 J=J+K
+PRINT*,J
+STOP
+END

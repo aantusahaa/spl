@@ -1,0 +1,9 @@
+J=1
+K=3
+L=2*J+K
+J=3*J+2*L
+K=K+2
+L=J+K+L
+PRINT*,J,K,L
+STOP
+END
