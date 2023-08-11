@@ -2,7 +2,6 @@
  * Problem: Find addition of two matrices
  */
 
-#include <limits.h>
 #include <stdio.h>
 
 int main() {
