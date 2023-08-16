@@ -4,13 +4,11 @@
  */
 
 #include <stdio.h>
+#include <string.h>
 
-void concatenateStrings(char dest[], const char src[]) {
+void concatenateStrings(char *dest, char *src) {
   int i, j;
-
-  // Find the length of dest
-  for (i = 0; dest[i] != '\0'; i++)
-    ;
+  i = strlen(dest);
 
   // Append src to dest
   for (j = 0; src[j] != '\0'; j++) {
